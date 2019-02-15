@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+ <head>
+  <meta charset="utf-8">
+  <title>HomeWork3</title>
+  <link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+  <form action="mysql_insert.php" method="post">
+   <p>
+   <fieldset class="field">
+    <legend>
+     <strong>Коротко о себе</strong>
+    </legend>
+    <p>
+     <label>
+      Имя:
+      <input type="text" name="name" value="" required>
+     </label>
+    </p>
+    <p>
+     <label>
+      Фамилия:
+      <input type="text" name="surname" value="" required>
+     </label>
+    </p>
+    <p>
+     Пол:
+     <label>
+      <input type="radio" name="sex" value="male" required>мужской
+     </label>
+     <label>
+      <input type="radio" name="sex" value="female" required>женский
+     </label>
+    </p>
+    <p>
+     <label>
+     Возраст:
+     <input type="text" maxlength="3" name="age" size="1" required> лет
+    </label>
+    </p>
+   </fieldset>
+   <p>
+    <fieldset class="field">
+     <legend>
+      <strong>Подробнее о себе</strong>
+     </legend>
+     <label>
+      <input type="radio" name="young" value="YoungMan"> Молодой человек
+     </label>
+     <br>
+     <label>
+      <input type="radio" name="young" value="Girl"> Девушка
+     </label>
+     <br>
+     <label>
+      <input type="text" name="DateOfBirth" value="" required> Дата рождения
+     </label>
+     <br>
+     <label>
+      <input type="text" name="FamilyStatus" value="" required> Семейное положение
+     </label>
+     <br>
+     <label>
+      <input type="text" name="SocialStatus" value="" required> Социальный статус
+     </label>
+     <br>
+     <label>
+      <input type="text" name="Residence" value="" required> Местожительство
+     </label>
+   <p><strong>Что вы обычно делаете на выходных:</strong></p>
+   <p>
+    <label>
+     <input type="checkbox" name="sleep" value="yes"> Сплю
+    </label>
+    <br>
+    <label>
+     <input type="checkbox" name="walkingwithfriends" value="yes"> Глуяю с друзьями
+    </label>
+    <br>
+    <label>
+     <input type="checkbox" name="fishing" value="yes"> Хожу на рыбалку
+    </label>
+    <br>
+    <label>
+     <input type="checkbox" name="playinggames" value="yes"> Играю в игры
+    </label>
+   </p>
+   <p><strong>Рассказать о формах в книге, посвященной HTML:</strong></p>
+   <p>
+    <select name="site" required>
+     <option value="" disabled selected>Site frequency:</option>
+     <option value="s1">Пункт 1</option>
+     <option value="s2">Пункт 2</option>
+    </select>
+   </p>
+   <p><strong>Сколько книг вы прочитали за всю жизнь:</strong></p>
+   <p>
+    <label>
+     <input type="radio" name="Books" value="0-10" required>0-10
+    </label>
+    <br>
+    <label>
+     <input type="radio" name="Books" value="11-20" required>11-20
+    </label>
+    <br>
+    <label>
+     <input type="radio" name="Books" value="21-50" required>21-50
+    </label>
+    <br>
+    <label>
+     <input type="radio" name="Books" value="50+" required>50+
+    </label>
+   </p>
+   <p><strong>Ваши комментарии:</strong>
+    <br>
+    <textarea name="sometext" rows="9" cols="60"></textarea>
+   </p>
+   <p>
+    <select size="3" name="position" multiple>
+     <option value="p1">Первая позиция</option>
+     <option value="p2" selected>Вторая позиция</option>
+     <option value="p3">Третья позиция</option>
+    </select>
+   </p>
+   </fieldset>
+   <p>
+    <button name="submit" type="submit">Отправить</button>
+   </p>
+  </form>
+ </body>
+</html>
